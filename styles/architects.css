@@ -27,7 +27,10 @@
   }
   .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
+    
   }
+  
+  
   .btn-primary{
     background-color: rgba(255, 144, 14, 1);
     color: rgba(255, 255, 255, 1);
@@ -59,6 +62,7 @@
   .navbar{
     justify-content: space-between;
     align-items: center;
+   
   }
   .nav-item{
     list-style: none;
@@ -70,8 +74,9 @@
     font-size: 1rem;
   }
   .navbar, .banner{
-    max-width: 1440px;
-    margin: 0 auto;
+    justify-content:space-between;
+    
+    
   }
 
   /* banner styles */
@@ -85,9 +90,20 @@
     font-weight: bold;
     font-size: 4rem;
   }
-  .banner-image{
+  
+    
+  .banner-image {
+   max-width: 1440px;
+    text-align: center;
+    margin: 0 auto;
+    
+    
+  }
+  .banner-image img{
     width: 100%;
   }
+  
+
 
   /* team and feature styles */
   .teams{
@@ -136,6 +152,21 @@
   .features{
     
     gap: 140px;
+  }
+  #experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+  .experience-years{
+    font-size: 4rem;
+    font-weight: 700;
+
+  }
+  .featured-architect img{
+    width: 100%;
   }
 
 
@@ -198,13 +229,28 @@
     filter: grayscale(100%);
   }
 
+  /* footer styles starts  */
+  .footer{
+    max-width: 1440px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgba(255, 244, 231, 1);
+  }
+  .footer-content{
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 35px 300px;
+  }
+
   
 
   /* responsive media query */
 @media screen and (max-width:576px) {
     .navbar, 
     .nav-links, 
-    .teams{
+    .teams, 
+    .features{
         flex-direction: column;
     }
     .team-img-container, .facts-container, .sponsor-companies{
@@ -221,6 +267,19 @@
         gap: 50px;
         justify-items: center;
     }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 130px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+    .experience-years{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .footer-content{
+        padding: 20px;
+    }
 
     
 }
@@ -233,7 +292,11 @@
         margin-left: 20px;
     }
     header{
-       /* margin-left: 50px; */
-       width: auto;
+      padding: 25px;
+       width: 100vw;
+
+    }
+    .footer{
+       margin-left: 40px;
     }
 }
